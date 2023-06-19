@@ -8,7 +8,7 @@
 <body>
     <h1>To Do List</h1>
     {{ items }}
-    <form method="POST" action="{% url 'add' %}">
+    <form method="POST" action="{% url 'add' %}"{% csrf_token %}>
         <div>
             <p>
                 <label for = "id_name">Name:</label>
